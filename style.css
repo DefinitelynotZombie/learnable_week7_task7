@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100Vh;
+    background: #e2d5de;
+    padding: 10px;
+}
+.first-wrapper{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.66);
+    padding: 40px;
+    border-radius: 15px;
+}
+.h1-container{
+    padding-bottom: 30px;
+    color: #fff;
+}
+h1{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+h1 i{
+    color: #3b71ca;
+    font-size: 16px;
+}
+.second-wrapper{
+    padding-left: 20px;
+}
+.input-container{    
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+input{
+    border: 2px solid transparent;
+    outline: none;
+    background:transparent;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.overlay
+{
+    color: rgba(255,255,255,0.5);
+    font-size: 20px;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.input-container input:valid + .overlay,.input-container input:focus + .overlay {
+    color: #3b71ca;
+    transform: translateY(-30px);
+    font-size: 16px;
+}
+.input-container input:valid ,.input-container input:focus {
+    border: 2px solid #3b71ca;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+button{
+    padding: 5px 25px;
+
+    background-color: #3b71ca;
+    box-shadow: 0 4px 9px -4px #386bc0;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    color: #fff;
+    padding: 15px 10px 5px 0px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    cursor: pointer;
+    position: relative;
+
+}
+/* ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./uncheck.svg);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: -8px;
+    border: none;
+    outline: none;
+} */
+ul li.checked{
+    text-decoration: line-through;
+}
+
+i{
+    padding-right: 10px;
+    text-align: center;
+
+}
+ul li span{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #3b71ca;
+    line-height: 40px;
+}
+ul li span i{
+    width: 100%;
+}
+ul li span:hover{
+    color: #edeefe;
+}
