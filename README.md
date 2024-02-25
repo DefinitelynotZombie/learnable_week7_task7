@@ -1,4 +1,5 @@
 # learnable_week7_task7
+# NOTE THEY ARE NO MEDIA QUERIES
 TODO List App Description
 This TODO List App is a simple web application that allows users to create, manage, and delete tasks.
 
@@ -9,4 +10,5 @@ Displaying tasks: Added tasks are displayed as li’s with a border below separa
 Marking tasks as completed: A a line strikes through the marked task
 Deleting tasks: i added an icon (X) for deleting the todo
 Local storage: The app utilizes the browser's local storage to store the tasks as the page reloads. When tasks are added, marked as completed, or deleted, the changes are saved to the local storage. On page load, the tasks are retrieved from local storage and displayed to the user.
+
 
